@@ -3,7 +3,7 @@ const { URL } = require("url");
 
 const routes = require("./routes");
 const bodyParser = require("./helpers/bodyParser");
-
+console.log(routes)
 const server = http.createServer((request, response) => {
   const parsedUrl = new URL(`http://localhost:8080${request.url}`);
   console.log(parsedUrl)
