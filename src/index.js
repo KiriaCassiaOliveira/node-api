@@ -6,7 +6,7 @@ const bodyParser = require("./helpers/bodyParser");
 
 const server = http.createServer((request, response) => {
   const parsedUrl = new URL(`http://localhost:8080${request.url}`);
-
+  console.log(parsedUrl)
   console.log(
     `Request method: ${request.method} | Endpoint: ${parsedUrl.pathname}`
   );
